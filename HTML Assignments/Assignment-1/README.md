@@ -15,9 +15,9 @@
 
 ### Screenshots
 
-> ![Image](Output/1.png)
-> ![Image](Output/2.png)
-> ![Image](Output/3.png)
-> ![Image](Output/4.png)
-> ![Image](Output/5.png)
-> ![Image](Output/6.png)
+> ![Image](Output/im1.png)
+> ![Image](Output/im2.png)
+> ![Image](Output/im3.png)
+> ![Image](Output/im4.png)
+> ![Image](Output/im5.png)
+> ![Image](Output/im6.png)
