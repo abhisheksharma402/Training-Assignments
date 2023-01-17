@@ -1,0 +1,18 @@
+.block-blue{
+    display: block; /*although p is already a block element*/
+    color: blue;
+}
+
+.inline, .inline p{
+    display: inline;
+}
+
+.block-orange,ul{
+    display: block;
+    color: orange;
+}
+
+header{
+    text-align: center;
+}
+
