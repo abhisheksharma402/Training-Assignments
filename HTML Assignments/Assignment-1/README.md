@@ -13,3 +13,11 @@
 7. Image 5 - different directory image, description in numbered list
 8. Image 6 - Company logo and a link. When the user clicks on this link., it will redirect the user to Gemini’s official website. 
 
+### Screenshots
+
+> ![Image](Output/1.png)
+> ![Image](Output/2.png)
+> ![Image](Output/3.png)
+> ![Image](Output/4.png)
+> ![Image](Output/5.png)
+> ![Image](Output/6.png)
