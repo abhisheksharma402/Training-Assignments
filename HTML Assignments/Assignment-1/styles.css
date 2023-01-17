@@ -1,14 +1,8 @@
-.block-blue{
-    display: block; /*although p is already a block element*/
+.blue{
     color: blue;
 }
 
-.inline, .inline p{
-    display: inline;
-}
-
-.block-orange,ul{
-    display: block;
+.orange{
     color: orange;
 }
 
