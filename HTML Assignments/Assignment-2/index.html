@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Assignment-2</title>
+
+    <style>
+
+        body{
+            font-family: "McLaren", cursive;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label,span{
+            float: left;
+            text-align: right;
+            margin-right: 15px;
+            width: 120px;
+        }
+        
+        .gender label{
+            float: none;
+        }
+        
+
+        .hobbies label{
+            text-align: left;   
+        }
+
+        .hobbies{
+            width: 250px;
+            margin-left: 135px;
+        }
+
+
+        .actions{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .form-element{
+            margin: 30px auto;
+        }
+
+        input{
+            padding: 5px;
+        }
+
+        input[type="submit"],input[type="reset"]{
+            border: 2px solid ;
+            cursor: pointer;
+            padding: 8px 16px;
+            box-shadow: 2px 2px 0px 0px rgba(0, 0, 0);
+        }
+
+        input[type="checkbox"]{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+
+        .hobbies div{
+            display: flex;
+            align-items: center;
+            justify-content:left;
+            margin-bottom: 5px;
+        }
+
+        .table{
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        table,th,td{
+            border: 2px solid rgb(117, 51, 33);
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+
+    <main>
+        <form action="">
+            <div class="form-element">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required/>
+            </div>
+            <div class="form-element">
+                <label for="phone">Phone No: </label>
+                <input type="tel" name="phone" id="phone" pattern="[1-9]{1}[0-9]{9}" required>
+            </div>
+            <div class="form-element">
+                <label for="dob">Date of Birth: </label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div class="form-element">
+                <label for="address">Address: </label>
+                <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="gender form-element">
+                <span>Gender: </span>
+                <input type="radio" name="gender" id="male" required>
+                <label class="" for="male">Male</label>
+                <input type="radio" name="gender" id="female" required>
+                <label for="female">Female</label><br>
+            </div>
+            <div class="form-element">
+                <label for="city">City: </label>
+                <select name="city" id="city" required>
+                    <option value="select city">Select city</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="gurgaon">Gurgaon</option>
+                    <option value="shimla">Shimla</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Manali">New Delhi</option>
+                    <option value="Manali">Noida</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <span>Hobbies: </span>
+                <div class="hobbies">
+                    <div>
+                        <input type="checkbox" name="music" id="music" >
+                        <label for="music">Music</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="sports" id="sports" >
+                        <label for="sports">Sports</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="reading" id="reading" >
+                        <label for="reading">Reading</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="writing" id="writing" > 
+                        <label for="writing">Writing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="stargazing" id="stargazing" >
+                        <label for="stargazing">Stargazing</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="actions form-element">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+            </div>
+
+        </form>
+
+
+
+        <div class="table">
+            <h1>
+                Student Records
+            </h1>
+
+
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Phone No.</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Hobbies</th>
+                </tr>
+    
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td rowspan="2">Aman</td>
+                    <td rowspan="2">8835737538</td>
+                    <td rowspan="2">Male</td>
+                    <td rowspan="2">23-06-1996</td>
+                    <td>Music</td>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="3">2</td>
+                    <td rowspan="3">Aanchal</td>
+                    <td rowspan="3">9935537538</td>
+                    <td rowspan="3">Female</td>
+                    <td rowspan="3">12-05-1997</td>
+                    <td>Stargazing</td>
+                </tr>
+                <tr>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="4">3</td>
+                    <td rowspan="4">Ashish</td>
+                    <td rowspan="4">6335537538</td>
+                    <td rowspan="4">Male</td>
+                    <td rowspan="4">12-12-1996</td>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <td>Music</td>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                </tr>
+                <tr>
+                    <td>Writing</td>
+                </tr>
+    
+    
+    
+            </table>
+
+
+        </div>
+
+        
+
+
+
+    </main>
+
+</body>
+</html>
