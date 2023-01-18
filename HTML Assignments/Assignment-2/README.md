@@ -18,5 +18,8 @@
 
 ### Screenshots
 
-> ![image](outputs/im1.png)
-> ![image](outputs/im2.png)
+> ![image](outputs/img1.png)
+> ![image](outputs/img2.png)
+> ![image](outputs/img3.png)
+> ![image](outputs/img4.png)
+> ![image](outputs/img5.png)
