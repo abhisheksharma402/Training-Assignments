@@ -15,10 +15,10 @@
 
 ### Screenshots
 
-> ![Image1](./Output/img1.jpeg?raw=true)
-> ![Image2](./Output/img2.jpeg?raw=true)
-> ![Image3](./Output/img3.jpeg?raw=true)
-> ![Image4](./Output/img4.jpeg?raw=true)
-> ![Image5](./Output/img5.jpeg?raw=true)
-> ![Image6](./Output/img6.jpeg?raw=true)
+> ![Image1](HTML Assignments/Assignment-1/Output/img1.jpeg)
+> ![Image2](Output/img2.jpeg)
+> ![Image3](Output/img3.jpeg)
+> ![Image4](Output/img4.jpeg)
+> ![Image5](Output/img5.jpeg)
+> ![Image6](Output/img6.jpeg)
 
