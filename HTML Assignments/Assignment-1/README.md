@@ -15,7 +15,7 @@
 
 ### Screenshots
 
-> ![Image1](HTML Assignments/Assignment-1/Output/img1.jpeg)
+> ![Image1](Output/img1.jpeg)
 > ![Image2](Output/img2.jpeg)
 > ![Image3](Output/img3.jpeg)
 > ![Image4](Output/img4.jpeg)
