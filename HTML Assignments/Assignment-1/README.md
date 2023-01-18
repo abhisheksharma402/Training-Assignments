@@ -15,10 +15,10 @@
 
 ### Screenshots
 
-> ![Image](Output/img1.jpeg)
-> ![Image](Output/img2.jpeg)
-> ![Image](Output/img3.jpeg)
-> ![Image](Output/img4.jpeg)
-> ![Image](Output/img5.jpeg)
-> ![Image](Output/img6.jpeg)
+> ![Image1](Output/img1.jpeg)
+> ![Image2](Output/img2.jpeg)
+> ![Image3](Output/img3.jpeg)
+> ![Image4](Output/img4.jpeg)
+> ![Image5](Output/img5.jpeg)
+> ![Image6](Output/img6.jpeg)
 
