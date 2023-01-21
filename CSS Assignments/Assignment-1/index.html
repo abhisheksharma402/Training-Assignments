@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>CSS Assignment-1</title>
+
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+
+    <main>
+        <form action="">
+            <div class="form-element">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Name" required/>
+            </div>
+            <div class="form-element">
+                <label for="phone">Phone No: </label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone" pattern="[1-9]{1}[0-9]{9}" required>
+            </div>
+            <div class="form-element">
+                <label for="dob">Date of Birth: </label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div class="form-element">
+                <label for="address">Address: </label>
+                <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="gender form-element">
+                <span class="span">Gender: </span>
+                <div>
+                    <div class="gen-div">
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gen-div">
+                        <input type="radio" name="gender" id="female" required>
+                        <label for="female">Female</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="form-element">
+                <label for="city">City: </label>
+                <select name="city" id="city" required>
+                    <option value="select city">Select city</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="gurgaon">Gurgaon</option>
+                    <option value="shimla">Shimla</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Manali">New Delhi</option>
+                    <option value="Manali">Noida</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <span class="span">Hobbies: </span>
+                <div class="hobbies">
+                    <div>
+                        <input type="checkbox" name="music" id="music" >
+                        <label for="music">Music</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="sports" id="sports" >
+                        <label for="sports">Sports</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="reading" id="reading" >
+                        <label for="reading">Reading</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="writing" id="writing" > 
+                        <label for="writing">Writing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="stargazing" id="stargazing" >
+                        <label for="stargazing">Stargazing</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="actions form-element">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+            </div>
+
+        </form>
+
+
+
+        <div class="table">
+            <h1>
+                Student Records
+            </h1>
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Phone No.</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Hobbies</th>
+                </tr>
+    
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td rowspan="2">Aman</td>
+                    <td rowspan="2">8835737538</td>
+                    <td rowspan="2">Male</td>
+                    <td rowspan="2">23-06-1996</td>
+                    <td>Music</td>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="3">2</td>
+                    <td rowspan="3">Aanchal</td>
+                    <td rowspan="3">9935537538</td>
+                    <td rowspan="3">Female</td>
+                    <td rowspan="3">12-05-1997</td>
+                    <td>Stargazing</td>
+                </tr>
+                <tr>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="4">3</td>
+                    <td rowspan="4">Ashish</td>
+                    <td rowspan="4">6335537538</td>
+                    <td rowspan="4">Male</td>
+                    <td rowspan="4">12-12-1996</td>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <td>Music</td>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                </tr>
+                <tr>
+                    <td>Writing</td>
+                </tr>
+    
+    
+    
+            </table>
+
+
+        </div>
+
+
+    </main>
+
+
+    <div class="demo">
+        <h1>Sample Demo to Demonstrate Position, Float, Display and Visibility Concepts</h1>
+        
+        <div class="pos-rel">
+            <h2 >1. Position Property</h2>
+            <h4>1.1. Positions: Relative (Before)</h4>
+            <div class="green"></div>
+            <div class="red"></div>
+            <div class="beige"></div>
+
+            <h4>
+                Suppose, we want to arrange the squares, one after another in this order 
+                (beige->green->red)After Applying positions:relative to each div, and modifying the 
+                top,bottom,left and right coordinates:
+            </h4>
+            <div class="green-modified"></div>
+            <div class="red-modified"></div>
+            <div class="beige-modified"></div>
+        </div>
+
+        <div class="pos-abs">
+            <h4>1.2. Before Position Absolute</h4>
+            <div class="parent">
+                <div class="child"></div>
+            </div>
+            <h4>
+                After Position Absolute (parent: position relative and child: position absolute).
+                Then applied right:0 on child. This will be relative to the parent element.
+
+            </h4>
+            <div class="new-parent">
+                <div class="new-child"></div>
+            </div>
+        </div>
+
+
+        <div>
+            <h2>2. Float Property</h2>
+            <div>
+                <h4>2.1. Image is floating to the left. So, text is getting wrapped around it</h4>
+                <img class="float-l" src="aurora.jpg" alt="aurora">
+                <p>
+                    An aurora, also commonly known as the polar lights, is a natural
+                    light display in Earth's sky, predominantly seen in high-latitude
+                    regions. Auroras display dynamic patterns of brilliant lights that appear as
+                    curtains, rays, spirals, or dynamic flickers covering the entire
+                    sky. Auroras are the result of disturbances in the magnetosphere caused
+                    by the solar wind. Major disturbances result from enhancements in the speed of the
+                    solar wind from coronal holes and coronal mass ejections. These disturbances alter 
+                    the trajectories of charged particles in the magnetospheric plasma.
+                    An aurora, also commonly known as the polar lights, is a natural
+                    light display in Earth's sky, predominantly seen in high-latitude
+                    regions. Auroras display dynamic patterns of brilliant lights that appear as
+                    curtains, rays, spirals, or dynamic flickers covering the entire
+                    sky. Auroras are the result of disturbances in the magnetosphere caused
+                    by the solar wind. Major disturbances result from enhancements in the speed of the
+                    solar wind from coronal holes and coronal mass ejections. These disturbances alter 
+                    the trajectories of charged particles in the magnetospheric plasma.An aurora, also commonly known as the polar lights, is a natural
+                    light display in Earth's sky, predominantly seen in high-latitude
+                    regions. Auroras display dynamic patterns of brilliant lights that appear as
+                    curtains, rays, spirals, or dynamic flickers covering the entire
+                    sky. Auroras are the result of disturbances in the magnetosphere caused
+                    by the solar wind. Major disturbances result from enhancements in the speed of the
+                    solar wind from coronal holes and coronal mass ejections. These disturbances alter 
+                    the trajectories of charged particles in the magnetospheric plasma.
+                </p>
+            </div>
+            <div>
+                <h4>2.2. Image is floating to the right. So, text is getting wrapped around it</h4>
+                <img class="float-r" src="aurora.jpg" alt="aurora">
+                <p>
+                    An aurora, also commonly known as the polar lights, is a natural
+                    light display in Earth's sky, predominantly seen in high-latitude
+                    regions. Auroras display dynamic patterns of brilliant lights that appear as
+                    curtains, rays, spirals, or dynamic flickers covering the entire
+                    sky. Auroras are the result of disturbances in the magnetosphere caused
+                    by the solar wind. Major disturbances result from enhancements in the speed of the
+                    solar wind from coronal holes and coronal mass ejections. These disturbances alter 
+                    the trajectories of charged particles in the magnetospheric plasma.
+                    An aurora, also commonly known as the polar lights, is a natural
+                    light display in Earth's sky, predominantly seen in high-latitude
+                    regions. Auroras display dynamic patterns of brilliant lights that appear as
+                    curtains, rays, spirals, or dynamic flickers covering the entire
+                    sky. Auroras are the result of disturbances in the magnetosphere caused
+                    by the solar wind. Major disturbances result from enhancements in the speed of the
+                    solar wind from coronal holes and coronal mass ejections. These disturbances alter 
+                    the trajectories of charged particles in the magnetospheric plasma.An aurora, also commonly known as the polar lights, is a natural
+                    light display in Earth's sky, predominantly seen in high-latitude
+                    regions. Auroras display dynamic patterns of brilliant lights that appear as
+                    curtains, rays, spirals, or dynamic flickers covering the entire
+                    sky. Auroras are the result of disturbances in the magnetosphere caused
+                    by the solar wind. Major disturbances result from enhancements in the speed of the
+                    solar wind from coronal holes and coronal mass ejections. These disturbances alter 
+                    the trajectories of charged particles in the magnetospheric plasma.
+                </p>
+            </div>
+        </div>
+
+
+        <div>
+            <h2>3. Visibility Property</h2>
+            <h4>3.1. Visibility Hidden</h4>
+            <div class="hidden">
+                <p>this is hidden</p>
+            </div>
+            <h4>3.2. Visibility Visible</h4>
+            <div class="visible">
+                <p>this is visible<p>
+            </div>
+            <h4>3.3. Visibility Collapse</h4>
+            <div>
+                <p>
+                    For table rows, columns, column groups, and row groups, the row(s) or column(s) 
+                    are hidden and the space they would have occupied is removed (as if display: none 
+                    were applied to the column/row of the table). However, the size of other rows and 
+                    columns is still calculated as though the cells in the collapsed row(s) or column(s) 
+                    are present.
+                </p>
+                <table>
+                    <tr>
+                        <th>col1</th>
+                        <th>col2</th>
+                        <th>col3</th>
+                    </tr>
+                    <tr>
+                        <td>val1</td>
+                        <td class="visibility-collapse">val2</td>
+                        <td>val3</td>
+                    </tr>
+                    <tr>
+                        <td>val4</td>
+                        <td>val5</td>
+                        <td>val6</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div>
+            <h2>4. Display Property</h2>
+            <h4>4.1. Display Inline</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut <span class="inline">This is an inline element with margin and padding of 20px. Notice that margin doesn't push elements vertically.</span> aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+                est laborum
+            </p>
+            <h4>4.2. Display Block</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut <span class="block">This is an inline element (styled as display:block) with margin and padding of 20px</span> aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+                est laborum
+            </p>
+
+            <h4>4.3. Display Inline-Block</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut <span class="inline-block">This is an inline element (styled as display:inline-block) with margin and padding of 20px. It acts like a block element while preserving the inline properties.</span> aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+                est laborum
+            </p>
+
+        </div>
+
+
+    </div>
+<!-- 
+    <p>position</p>
+    <p>float</p>
+    <p>display</p>
+    <p>visibilty</p> -->
+
+
+</body>
+</html>

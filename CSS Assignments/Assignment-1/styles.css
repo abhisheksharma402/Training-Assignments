@@ -1,0 +1,294 @@
+body{
+    font-family: "McLaren", cursive;
+    background: linear-gradient(to right, #659999, #f4791f);
+    margin: 0;
+    padding-top: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+input{
+    font-family: "McLaren", cursive;
+}
+
+
+header{
+    text-align: center;
+    padding: 20px;
+    position:fixed;
+    width: 100%;    
+    background: #d2e3f5;
+    top: 0;
+    background: linear-gradient(to right, #a2cece, #f4791f);
+    box-shadow: 2px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-top: 100px;
+
+}
+
+form{
+    border: 2px solid #474646;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.1);
+    padding: 40px;
+    background-image:  radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#000000 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+
+label,.span{
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 120px;
+}
+
+.gender label{
+    width: min-content;
+}
+
+
+.hobbies label{
+    text-align: left;   
+}
+
+.hobbies{
+    width: 250px;
+    margin-left: 135px;
+}
+
+
+.actions{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-element{
+    margin: 30px auto;
+}
+
+input,textarea{
+    padding: 5px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+input::placeholder
+{
+    font-family: "McLaren", cursive;
+    color: #5c5b5b;
+}
+
+.visibility-collapse{
+    visibility: collapse;
+}
+
+input[type="submit"],input[type="reset"]{
+    border: 2px solid ;
+    cursor: pointer;
+    padding: 8px 16px;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0);
+    transition: background-color 0.35s ease-in;
+}
+
+
+input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color: #f4791f;
+}
+
+
+.gender div{
+    display: flex;
+    
+}
+
+.gen-div{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    background: lightgrey;
+    appearance: none;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked{
+    box-shadow: inset 0 0 0 5px #f4791f;
+}
+
+
+input[type="checkbox"]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transition: box-shadow .3s;
+    background: lightgrey;
+    border: none;
+    appearance: none;
+    border-radius: 5px;
+}
+input[type="checkbox"]:checked { 
+    box-shadow: inset 0 0 0 20px #f4791f;
+}
+
+select{
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 8px;
+    background-color: lightgrey;
+    font-family: "McLaren", cursive;
+}
+
+
+input,textarea{
+    box-shadow: 2px 2px rgb(0,0,0,0.1);
+}
+
+
+input:focus,textarea:focus{
+    outline: none;
+    border: 3px solid;
+}
+
+
+.hobbies div{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    margin-bottom: 5px;
+}
+
+.table{
+    text-align: center;
+    margin: 50px auto;
+}
+
+table,th,td{
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.pos-rel div{
+    width: 100px;
+    height: 100px;
+}
+
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.beige{
+    background-color: beige;
+}
+
+.green-modified{
+    background-color: green;
+    position: relative;
+    left: 100px;
+
+}
+
+.red-modified{
+    background-color: red;
+    position: relative;
+    bottom: 100px;
+    left: 200px;
+}
+
+.beige-modified{
+    background-color: beige;    
+    position: relative;
+    bottom: 200px;
+}
+
+
+.parent{
+    width: 300px;
+    height: 200px;
+    background-color: green;
+
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+}
+
+
+.new-parent{
+    width: 300px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+}
+
+.new-child{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: absolute;
+    right: 0;
+}
+
+.float-l{
+    width: 350px;
+    height: 250px;
+    float: left;
+}
+
+.float-r{
+    width: 350px;
+    height: 250px;
+    float: right;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+
+.inline{
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.block{
+    background-color: #fff;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+}
+
+.inline-block{
+    background-color: #fff;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+.demo{
+    padding: 20px;
+    color:#000000;
+}
