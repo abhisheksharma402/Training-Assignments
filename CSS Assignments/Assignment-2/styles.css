@@ -1,0 +1,180 @@
+header{
+    text-align: center;
+}
+
+size-units{
+    width: 100%;
+}
+
+.size-units div{
+  margin-bottom: 20px;
+}
+
+.px{
+    border: 2px solid seagreen;
+    width: 400px;
+    font-size: 20px;
+}
+
+.parent{
+    border: 2px solid midnightblue;
+    width: 50%;
+    font-size: 100%;
+}
+
+.child{
+    border: 2px solid lightblue;
+    width: 50%;
+}
+
+
+.vw-vh{
+    border: 2px solid olive;
+    width: 50vw;
+    height: 30vh;
+}
+
+
+.rem{
+    border: 2px solid limegreen;
+    font-size: 2rem;
+}
+
+.em{
+    border: 2px solid limegreen;
+    font-size: 2rem;
+}
+
+.em p{
+    border: 2px solid;
+    font-size: 1em;
+}
+
+
+
+.transforms > div{
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transforms h3{
+  margin-top: 150px;
+}
+
+.rotate{
+  transform: rotate(45deg);
+}
+
+.scale{
+  transform: scale(2,1.5);
+}
+
+
+.t-parent1 .translate1{
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  transform: translate(50px,-50px);
+}
+
+.t-parent2 .translate2{
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  transform: translate(100%);
+}
+
+
+.box1{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease-in-out, transform 1s ease-in;
+}
+
+.box1:hover {
+  
+  transform: scale(2) rotate(720deg);
+  background-color: green;
+  cursor: pointer;
+}
+
+.transition button{
+  margin: auto;
+}
+
+.btn{
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn>button{
+  align-self: center;
+  background-color: skyblue;
+  box-shadow: 10px 10px 0 #000;
+  color: navy;
+  display: block;
+  font-family: system-ui;
+  font-weight: 800;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  transition: translate box-shadow color .25s;
+  transition: background-color ease-in-out 1s;
+}
+
+.btn button:hover {
+  box-shadow: none;
+  background-color:aquamarine;
+  color: #000;
+  translate: 10px 10px;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu a{
+  background-color: azure;
+  padding: 20px;
+  border: 2px solid #000;
+  width: 5%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  transition: background-color ease-in-out 1s;
+}
+
+.menu a:hover{
+  background-color:cadetblue
+}
+
+.des-sel,.child-sel,.adj-sib-sel,.gen-sib-sel{
+  width: 300px;
+  height: 250px;
+  border: 2px solid;
+  padding: 10px;
+}
+
+.des-sel div,.child-sel div, .adj-sib-sel div, .gen-sib-sel div{
+  padding: 10px;
+  border:2px solid brown;
+}
+
+.des-sel p, .child-sel > p, .adjchildp + p, .genchildp~p{
+  background-color:cornflowerblue;
+}
