@@ -12,13 +12,9 @@ console.log(data);
         let rowData = data[i];
 
         for(const prop in rowData){
-            let cell;
+            let cell = document.createElement("td");
             if(i===0){
-                cell = document.createElement("th");
-                cell.style.fontWeight = "bold"; // although, th is already bold
-            }
-            else{
-                cell = document.createElement("td");
+                cell.style.fontWeight = "bold";
             }
             let textNode = document.createTextNode(rowData[prop]);
             cell.appendChild(textNode);
