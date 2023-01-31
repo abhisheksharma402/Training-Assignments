@@ -1,0 +1,87 @@
+body{
+    font-family: "McLaren", cursive;
+    background: linear-gradient(to right, #659999, #f4791f);
+    margin: 0;
+    padding-top: 0;
+    overflow: auto;
+    padding:40px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-element{
+    margin: 30px auto;
+}
+
+input{
+    padding: 5px;
+    font-family: "McLaren", cursive;
+}
+
+
+.form{
+    margin-bottom: 50px;
+}
+
+.email-error, .phone-error{
+    font-size: 14px;
+    margin: 0;
+}
+
+form{
+    border: 2px solid #474646;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.1);
+    padding: 40px;
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px; 
+}
+
+
+input::placeholder
+{
+    font-family: "McLaren", cursive;
+    color: #5c5b5b;
+}
+
+button[type="submit"],button[type="reset"]{
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 8px 16px;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0);
+    background-color: #e4e4d9;
+    transition: background-color 0.35s ease-in;
+    border-radius: 8px;
+    color: #000;
+}
+
+button[type="submit"]:hover,button[type="reset"]:hover{
+    background-color: #f4791f;
+}
+
+button[type="submit"]:active,button[type="reset"]:hover{
+    background-color: #e4e4d9;
+}
+
+
+table{
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.1);
+    width: 100%;
+}
+
+table,th,td{
+    border: 2px solid #474646;
+    border-collapse: collapse;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+h3{
+    text-align: center;
+}
+
