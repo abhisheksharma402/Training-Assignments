@@ -38,4 +38,4 @@ Make sure to review all functionalities and code structure before pushing. This 
 
 ### Screenshots
 
-> ![image](output/im1.png)
+> ![image](output/img1.png)
