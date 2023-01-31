@@ -14,16 +14,17 @@ console.log(data);
         for(const prop in rowData){
             let cell;
             if(i===0){
-                cell = document.createElement("td");
-                cell.style.fontWeight = "bold";
+                cell = document.createElement("th");
+                cell.style.fontWeight = "bold"; // although, th is already bold
             }
             else{
                 cell = document.createElement("td");
             }
             let textNode = document.createTextNode(rowData[prop]);
+            cell.appendChild(textNode);
             cell.style.border = "2px solid black";
             cell.style.padding = "10px";
-            cell.appendChild(textNode);
+            
             row.appendChild(cell);
         }
         
