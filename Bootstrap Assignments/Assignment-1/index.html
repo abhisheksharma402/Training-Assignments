@@ -1,203 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bootstrap Assignment 1</title>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg shadow">
-        <div class="container-fluid">
-            <!-- <a class="navbar-brand w-25 me-5" href="#">
-                <img class="w-100" src="./logo.png" alt="logo">
-            </a> -->
-            <span class="navbar-text fs-2 mx-auto">
-                Bootstrap Assignment-1
-            </span>
-        </div>
+      <div class="container-fluid">
+        <span class="navbar-text fs-2 mx-auto"> Bootstrap Assignment 1 </span>
+      </div>
     </nav>
 
-    
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-6 text-center mt-3">
-                <h1>Form</h1>
-            </div>
-            <div class="col-6 text-center mt-3">
-                <h1>Table</h1>
-            </div>
+      <div class="row">
+        <div class="col-6 text-center mt-3">
+          <h1>Form</h1>
         </div>
-        <div class="row">
-            <div class="col-6">
-                <form class="container p-3">
-                    <div class="row mb-3">
-                        <label for="name" class="col-form-label col-sm-2 text-wrap">Name:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="name">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label for="phone" class="col-form-label col-sm-2 text-wrap">Phone:</label>
-                        <div class="col-sm-10">
-                            <input type="tel" class="form-control" id="phone">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label for="dob" class="col-form-label col-sm-2 text-wrap">Date of Birth</label>
-                        <div class="col-sm-10">
-                            <input type="date" class="form-control" id="dob">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label for="address" class="col-form-label col-sm-2 text-wrap">Address:</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" name="address" id="address"></textarea>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label class="col-form-label col-sm-2 text-wrap" for="gender">Gender:</label>
-                        <div class="col-sm-10 d-flex">
-                            <div class="form-check me-3">
-                                <input class="form-check-input" name="male" id="male" type="radio">
-                                <label class="form-check-label" for="male">Male</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="female" id="female" type="radio">
-                                <label class="form-check-label" for="female">Female</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    <div class="row mb-3">
-                        <label class="col-form-label col-sm-2 text-wrap" for="">City:</label>
-                        <div class="col-sm-10">
-                            <select class="form-select">
-                                <option selected>Select city</option>
-                                <option value="chandigarh">Chandigarh</option>
-                                <option value="gurgaon">Gurgaon</option>
-                                <option value="shimla">Shimla</option>
-                                <option value="Manali">Manali</option>
-                                <option value="Manali">New Delhi</option>
-                                <option value="Manali">Noida</option>
-                            </select>   
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-2">
-                            <label class="form-label text-wrap" for="hobbies">Hobbies:</label>
-                        </div>
-                        
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="music">
-                                <label class="form-check-label" for="music">
-                                Music
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="sports">
-                                <label class="form-check-label" for="music">
-                                Sports
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="music">
-                                <label class="form-check-label" for="music">
-                                Reading
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="music">
-                                <label class="form-check-label" for="music">
-                                Writing
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="music">
-                                <label class="form-check-label" for="music">
-                                Stargazing
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    <div class="mt-5 d-flex justify-content-evenly">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="reset" class="btn btn-primary">Reset</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-6 overflow-auto">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">S.No</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Phone No.</th>
-                            <th scope="col">Gender</th>
-                            <th scope="col">DOB</th>
-                            <th scope="col">Hobbies</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td rowspan="2">1</td>
-                            <td rowspan="2">Aman</td>
-                            <td rowspan="2">8835737538</td>
-                            <td rowspan="2">Male</td>
-                            <td rowspan="2">23-06-1996</td>
-                            <td>Music</td>
-                        </tr>
-                        <tr>
-                            <td>Reading</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3">2</td>
-                            <td rowspan="3">Aanchal</td>
-                            <td rowspan="3">9935537538</td>
-                            <td rowspan="3">Female</td>
-                            <td rowspan="3">12-05-1997</td>
-                            <td>Stargazing</td>
-                        </tr>
-                        <tr>
-                            <td>Sports</td>
-                        </tr>
-                        <tr>
-                            <td>Reading</td>
-                        </tr>
-            
-                        <tr>
-                            <td rowspan="4">3</td>
-                            <td rowspan="4">Ashish</td>
-                            <td rowspan="4">6335537538</td>
-                            <td rowspan="4">Male</td>
-                            <td rowspan="4">12-12-1996</td>
-                            <td>Sports</td>
-                        </tr>
-                        <tr>
-                            <td>Music</td>
-                        </tr>
-                        <tr>
-                            <td>Reading</td>
-                        </tr>
-                        <tr>
-                            <td>Writing</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="col-6 text-center mt-3">
+          <h1>Table</h1>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <form class="container p-3">
+            <div class="row mb-3">
+              <label for="name" class="col-form-label col-sm-2 text-wrap"
+                >Name:</label
+              >
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="phone" class="col-form-label col-sm-2 text-wrap"
+                >Phone:</label
+              >
+              <div class="col-sm-10">
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="dob" class="col-form-label col-sm-2 text-wrap"
+                >Date of Birth</label
+              >
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="dob" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="address" class="col-form-label col-sm-2 text-wrap"
+                >Address:</label
+              >
+              <div class="col-sm-10">
+                <textarea
+                  class="form-control"
+                  name="address"
+                  id="address"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="col-form-label col-sm-2 text-wrap" for="gender"
+                >Gender:</label
+              >
+              <div class="col-sm-10 d-flex">
+                <div class="form-check me-3">
+                  <input
+                    class="form-check-input"
+                    name="male"
+                    id="male"
+                    type="radio"
+                  />
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    name="female"
+                    id="female"
+                    type="radio"
+                  />
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-form-label col-sm-2 text-wrap" for=""
+                >City:</label
+              >
+              <div class="col-sm-10">
+                <select class="form-select">
+                  <option selected>Select city</option>
+                  <option value="chandigarh">Chandigarh</option>
+                  <option value="gurgaon">Gurgaon</option>
+                  <option value="shimla">Shimla</option>
+                  <option value="Manali">Manali</option>
+                  <option value="Manali">New Delhi</option>
+                  <option value="Manali">Noida</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-sm-2">
+                <label class="form-label text-wrap" for="hobbies"
+                  >Hobbies:</label
+                >
+              </div>
+
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="music" />
+                  <label class="form-check-label" for="music"> Music </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="sports" />
+                  <label class="form-check-label" for="music"> Sports </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="music" />
+                  <label class="form-check-label" for="music"> Reading </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="music" />
+                  <label class="form-check-label" for="music"> Writing </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="music" />
+                  <label class="form-check-label" for="music">
+                    Stargazing
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 d-flex justify-content-evenly">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-primary">Reset</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6 overflow-auto">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Phone No.</th>
+                <th scope="col">Gender</th>
+                <th scope="col">DOB</th>
+                <th scope="col">Hobbies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">1</td>
+                <td rowspan="2">Aman</td>
+                <td rowspan="2">8835737538</td>
+                <td rowspan="2">Male</td>
+                <td rowspan="2">23-06-1996</td>
+                <td>Music</td>
+              </tr>
+              <tr>
+                <td>Reading</td>
+              </tr>
+              <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">Aanchal</td>
+                <td rowspan="3">9935537538</td>
+                <td rowspan="3">Female</td>
+                <td rowspan="3">12-05-1997</td>
+                <td>Stargazing</td>
+              </tr>
+              <tr>
+                <td>Sports</td>
+              </tr>
+              <tr>
+                <td>Reading</td>
+              </tr>
+
+              <tr>
+                <td rowspan="4">3</td>
+                <td rowspan="4">Ashish</td>
+                <td rowspan="4">6335537538</td>
+                <td rowspan="4">Male</td>
+                <td rowspan="4">12-12-1996</td>
+                <td>Sports</td>
+              </tr>
+              <tr>
+                <td>Music</td>
+              </tr>
+              <tr>
+                <td>Reading</td>
+              </tr>
+              <tr>
+                <td>Writing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
