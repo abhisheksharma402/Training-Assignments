@@ -1,0 +1,33 @@
+body {
+    /* overflow: hidden; */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.empty {
+    width: 20px;
+    height: 15px;
+}
+
+.banner{
+    top: 60%;
+}
+
+.play-btn, .pause-btn{
+    left: 35%;
+    top: 35%;
+}
+
+
+
+@media all and (min-width:260px) and (max-width:657px) {
+    .banner h1{
+        font-size: 1rem;
+    }
+    .banner button{
+        font-size: 0.4em;
+    }
+    .banner{
+        top: 50%;
+    }
+}

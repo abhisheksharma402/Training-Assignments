@@ -1,0 +1,18 @@
+body{
+    background: linear-gradient(to right, #659999, #f4791f);
+    padding-bottom: 20px;
+}
+
+table{
+    background-color: #fff;
+    width: 1vw;
+    font-size: 1vw;
+}
+
+form{
+    background-color: #fff;
+}
+
+button{
+    background-color: #f4791f;
+}
