@@ -21,84 +21,86 @@
     </header>
 
     <main>
-        <form action="">
-            <div class="form-element">
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" placeholder="Name" required/>
-            </div>
-            <div class="form-element">
-                <label for="phone">Phone No: </label>
-                <input type="tel" name="phone" id="phone" placeholder="Phone" pattern="[1-9]{1}[0-9]{9}" required>
-            </div>
-            <div class="form-element">
-                <label for="dob">Date of Birth: </label>
-                <input type="date" name="dob" id="dob" required>
-            </div>
-            <div class="form-element">
-                <label for="address">Address: </label>
-                <textarea name="address" id="address" cols="30" rows="10" required></textarea>
-            </div>
-            <div class="gender form-element">
-                <span class="span">Gender: </span>
-                <div>
-                    <div class="gen-div">
-                        <input type="radio" name="gender" id="male" required>
-                        <label for="male">Male</label>
-                    </div>
-                    <div class="gen-div">
-                        <input type="radio" name="gender" id="female" required>
-                        <label for="female">Female</label><br>
+        <section class="form">
+            <form action="">
+                <div class="form-element">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Name" required/>
+                </div>
+                <div class="form-element">
+                    <label for="phone">Phone No: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone" pattern="[1-9]{1}[0-9]{9}" required>
+                </div>
+                <div class="form-element">
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+                <div class="form-element">
+                    <label for="address">Address: </label>
+                    <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="gender form-element">
+                    <span class="span">Gender: </span>
+                    <div>
+                        <div class="gen-div">
+                            <input type="radio" name="gender" id="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="gen-div">
+                            <input type="radio" name="gender" id="female" required>
+                            <label for="female">Female</label><br>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-element">
-                <label for="city">City: </label>
-                <select name="city" id="city" required>
-                    <option value="select city">Select city</option>
-                    <option value="chandigarh">Chandigarh</option>
-                    <option value="gurgaon">Gurgaon</option>
-                    <option value="shimla">Shimla</option>
-                    <option value="Manali">Manali</option>
-                    <option value="Manali">New Delhi</option>
-                    <option value="Manali">Noida</option>
-                </select>
-            </div>
-            <div class="form-element">
-                <span class="span">Hobbies: </span>
-                <div class="hobbies">
-                    <div>
-                        <input type="checkbox" name="music" id="music" >
-                        <label for="music">Music</label><br>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="sports" id="sports" >
-                        <label for="sports">Sports</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="reading" id="reading" >
-                        <label for="reading">Reading</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="writing" id="writing" > 
-                        <label for="writing">Writing</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="stargazing" id="stargazing" >
-                        <label for="stargazing">Stargazing</label><br>
+                <div class="form-element">
+                    <label for="city">City: </label>
+                    <select name="city" id="city" required>
+                        <option value="select city">Select city</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="gurgaon">Gurgaon</option>
+                        <option value="shimla">Shimla</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Manali">New Delhi</option>
+                        <option value="Manali">Noida</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <span class="span">Hobbies: </span>
+                    <div class="hobbies">
+                        <div>
+                            <input type="checkbox" name="music" id="music" >
+                            <label for="music">Music</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sports" id="sports" >
+                            <label for="sports">Sports</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="reading" id="reading" >
+                            <label for="reading">Reading</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="writing" id="writing" > 
+                            <label for="writing">Writing</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="stargazing" id="stargazing" >
+                            <label for="stargazing">Stargazing</label><br>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div  class="actions form-element">
-                <input type="submit" value="SUBMIT">
-                <input type="reset" value="RESET">
-            </div>
+                <div  class="actions form-element">
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </div>
 
-        </form>
+            </form>
+        </section>
 
 
 
-        <div class="table">
+        <section class="table">
             <h1>
                 Student Records
             </h1>
@@ -156,55 +158,51 @@
                 <tr>
                     <td>Writing</td>
                 </tr>
-    
-    
-    
             </table>
-
-
-        </div>
-
-
+        </section>
     </main>
 
 
-    <div class="demo">
+
+    <section class="demo">
         <h1>Sample Demo to Demonstrate Position, Float, Display and Visibility Concepts</h1>
         
-        <div class="pos-rel">
-            <h2 >1. Position Property</h2>
-            <h4>1.1. Positions: Relative (Before)</h4>
-            <div class="green"></div>
-            <div class="red"></div>
-            <div class="beige"></div>
+        <section>
+            <div class="pos-rel">
+                <h2 >1. Position Property</h2>
+                <h4>1.1. Positions: Relative (Before)</h4>
+                <div class="green"></div>
+                <div class="red"></div>
+                <div class="beige"></div>
 
-            <h4>
-                Suppose, we want to arrange the squares, one after another in this order 
-                (beige->green->red)After Applying positions:relative to each div, and modifying the 
-                top,bottom,left and right coordinates:
-            </h4>
-            <div class="green-modified"></div>
-            <div class="red-modified"></div>
-            <div class="beige-modified"></div>
-        </div>
-
-        <div class="pos-abs">
-            <h4>1.2. Before Position Absolute</h4>
-            <div class="parent">
-                <div class="child"></div>
+                <h4>
+                    Suppose, we want to arrange the squares, one after another in this order 
+                    (beige->green->red)After Applying positions:relative to each div, and modifying the 
+                    top,bottom,left and right coordinates:
+                </h4>
+                <div class="green-modified"></div>
+                <div class="red-modified"></div>
+                <div class="beige-modified"></div>
             </div>
-            <h4>
-                After Position Absolute (parent: position relative and child: position absolute).
-                Then applied right:0 on child. This will be relative to the parent element.
 
-            </h4>
-            <div class="new-parent">
-                <div class="new-child"></div>
+            <div class="pos-abs">
+                <h4>1.2. Before Position Absolute</h4>
+                <div class="parent">
+                    <div class="child"></div>
+                </div>
+                <h4>
+                    After Position Absolute (parent: position relative and child: position absolute).
+                    Then applied right:0 on child. This will be relative to the parent element.
+
+                </h4>
+                <div class="new-parent">
+                    <div class="new-child"></div>
+                </div>
             </div>
-        </div>
+        </section>
 
 
-        <div>
+        <section>
             <h2>2. Float Property</h2>
             <div>
                 <h4>2.1. Image is floating to the left. So, text is getting wrapped around it</h4>
@@ -264,10 +262,10 @@
                     the trajectories of charged particles in the magnetospheric plasma.
                 </p>
             </div>
-        </div>
+        </section>
 
 
-        <div>
+        <section>
             <h2>3. Visibility Property</h2>
             <h4>3.1. Visibility Hidden</h4>
             <div class="hidden">
@@ -305,9 +303,9 @@
                 </table>
             </div>
 
-        </div>
+        </section>
 
-        <div>
+        <section>
             <h2>4. Display Property</h2>
             <h4>4.1. Display Inline</h4>
             <p>
@@ -338,16 +336,7 @@
                 est laborum
             </p>
 
-        </div>
-
-
-    </div>
-<!-- 
-    <p>position</p>
-    <p>float</p>
-    <p>display</p>
-    <p>visibilty</p> -->
-
-
+        </section>
+    </section>
 </body>
 </html>

@@ -34,7 +34,7 @@ main{
 
 }
 
-form{
+.form{
     border: 2px solid #474646;
     border-radius: 4px;
     box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.1);

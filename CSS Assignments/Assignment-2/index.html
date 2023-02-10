@@ -11,7 +11,8 @@
     <header>
         <h1>CSS Assignment-2</h1>
     </header>
-    <div class="size-units">
+    <main>
+      <section class="size-units">
         <h1>1. Size Units (px, %, vw, vh, em, rem)</h1>
         <p class="px">
             Pixels specify definite or absolute values. They are exact values and not relative to 
@@ -50,10 +51,9 @@
                 Font size of this text is 1*(font-size of div with class "em") = 1*32 = 32px.
             </p>
         </div>
+      </section>
 
-
-
-      <div class="transforms"> 
+      <section class="transforms"> 
         <h1>2. Transforms</h1>
         <h3>2.1. Rotate</h3>
         <div class="rotate">BOX (Rotated by 45 degrees)</div>
@@ -67,7 +67,7 @@
         </div>
         <p>
           Translate Using Percentages: When we make use of a percentage value in translate property, 
-          that percentage refers to the element’s size, rather than the available space within the 
+          that percentage refers to the element's size, rather than the available space within the 
           parent container.
         </p>
         <div class="t-parent2">
@@ -76,93 +76,105 @@
             100% of its width.
           </div>
         </div>
-      </div>
+      </section>
           
 
 
-      <div class="transition">
+      <section class="transition">
         <h1>3. Transitions</h1>
         <p>Transition properties allow elements to change values over a specified duration, animating 
           the property changes, rather than having them occur immediately.</p>
 
-        <h3>3.1. Button Example</h3>
-        <div class="btn">
-          <button>
-            Hover me
-          </button>
-        </div>
+        <section>
+          <h3>3.1. Button Example</h3>
+          <div class="btn">
+            <button>
+              Hover me
+            </button>
+          </div>
+        </section>
 
-        <h3>3.2. Menu Example</h3>
+        <section>
+          <h3>3.2. Menu Example</h3>
 
-        <div class="menu">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-        </div>
-
-        <h3>3.3. Mutliple Transitions</h3>
-        <div class="box1">
-          Box 1
-        </div>
-
-      </div>
+          <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+          </div>
+        </section>
 
 
+        <section>
+          <h3>3.3. Mutliple Transitions</h3>
+          <div class="box1">
+            Box 1
+          </div>
+        </section>
 
-      <div>
+      </section>
+
+
+
+      <section class="combinators">
         <h1>4. CSS Combinators</h1>
         <p>A combinator is something that explains the relationship between the selectors.</p>
-        <h3>4.1. Descendant Selector</h3>
-        <p>The descendant selector selects all the descendants (child, grandchild and so on) of 
-          the specified element.
-        </p>
-        <div class="des-sel">
-          Hi, I am des
-          <p>Hello there, I'm the child of des</p>
-          <div>
-            <p>Hey,  I am the grandchild of des</p>
+        <section>
+          <h3>4.1. Descendant Selector</h3>
+          <p>The descendant selector selects all the descendants (child, grandchild and so on) of 
+            the specified element.
+          </p>
+          <div class="des-sel">
+            Hi, I am des
+            <p>Hello there, I'm the child of des</p>
+            <div>
+              <p>Hey,  I am the grandchild of des</p>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <h3>4.2. Child Selector (>)</h3>
-        <p>The child selector selects all elements that are the children of a specified element.</p>
+        <section>
+          <h3>4.2. Child Selector (>)</h3>
+          <p>The child selector selects all elements that are the children of a specified element.</p>
 
-        <div class="child-sel">
-          Hi, I am des
-          <p>Hello there, I'm the first child of des</p>
-          <div>
-            <p>Hey,  I am the grandchild of des</p>
+          <div class="child-sel">
+            Hi, I am des
+            <p>Hello there, I'm the first child of des</p>
+            <div>
+              <p>Hey,  I am the grandchild of des</p>
+            </div>
+            <p>Hello, I am the second child of des</p>
           </div>
-          <p>Hello, I am the second child of des</p>
-        </div>
+        </section>
 
-        <h3>4.3. Adjacent Sibling Selector (+)</h3>
-        <p>The adjacent sibling selector is used to select an element that is directly after another specific element.</p>
-        <div class="adj-sib-sel">
-          Hi, I am des
-          <p class="adjchildp">Hello there, I'm the first child of des</p>
-          <p>Hey, I am adjacent to the above paragraph tag</p>
-          <div>
-            <p>Hey,  I am the grandchild of des</p>
+        <section>
+          <h3>4.3. Adjacent Sibling Selector (+)</h3>
+          <p>The adjacent sibling selector is used to select an element that is directly after another specific element.</p>
+          <div class="adj-sib-sel">
+            Hi, I am des
+            <p class="adjchildp">Hello there, I'm the first child of des</p>
+            <p>Hey, I am adjacent to the above paragraph tag</p>
+            <div>
+              <p>Hey,  I am the grandchild of des</p>
+            </div>
+            <p>Hello, I am the second child of des and a sibling of first paragraph tag, but not adjacent</p>
           </div>
-          <p>Hello, I am the second child of des and a sibling of first paragraph tag, but not adjacent</p>
-        </div>
+        </section>
 
-        <h3>4.4. General Sibling Selector (~)</h3>
-        <p>The general sibling selector selects all elements that are next siblings of a specified element.</p>
-        <div class="gen-sib-sel">
-          Hi, I am des
-          <p class="genchildp">Hello there, I'm the first child of des</p>
-          <p>Hey, I am adjacent sibling of the above paragraph tag</p>
-          <div>
-            <p>Hey,  I am the grandchild of des</p>
+        <section>
+          <h3>4.4. General Sibling Selector (~)</h3>
+          <p>The general sibling selector selects all elements that are next siblings of a specified element.</p>
+          <div class="gen-sib-sel">
+            Hi, I am des
+            <p class="genchildp">Hello there, I'm the first child of des</p>
+            <p>Hey, I am adjacent sibling of the above paragraph tag</p>
+            <div>
+              <p>Hey,  I am the grandchild of des</p>
+            </div>
+            <p>Hello, I am the second child of des and a sibling of first paragraph tag</p>
           </div>
-          <p>Hello, I am the second child of des and a sibling of first paragraph tag</p>
-        </div>
-      </div>
+        </section>
+      </section>
 
-
-
-      
-    </div>
+    </main>
 </body>
 </html>

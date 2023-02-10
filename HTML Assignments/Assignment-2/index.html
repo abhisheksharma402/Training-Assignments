@@ -10,92 +10,9 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="styles.css">
+
     <title>Assignment-2</title>
-
-    <style>
-
-        body{
-            font-family: "McLaren", cursive;
-        }
-
-        header{
-            text-align: center;
-        }
-
-        main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        label,span{
-            float: left;
-            text-align: right;
-            margin-right: 15px;
-            width: 120px;
-        }
-        
-        .gender label{
-            float: none;
-        }
-        
-
-        .hobbies label{
-            text-align: left;   
-        }
-
-        .hobbies{
-            width: 250px;
-            margin-left: 135px;
-        }
-
-
-        .actions{
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .form-element{
-            margin: 30px auto;
-        }
-
-        input{
-            padding: 5px;
-        }
-
-        input[type="submit"],input[type="reset"]{
-            border: 2px solid ;
-            cursor: pointer;
-            padding: 8px 16px;
-            box-shadow: 2px 2px 0px 0px rgba(0, 0, 0);
-        }
-
-        input[type="checkbox"]{
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
-
-        .hobbies div{
-            display: flex;
-            align-items: center;
-            justify-content:left;
-            margin-bottom: 5px;
-        }
-
-        .table{
-            text-align: center;
-            margin: 50px auto;
-        }
-
-        table,th,td{
-            border: 2px solid rgb(117, 51, 33);
-            border-collapse: collapse;
-            padding: 5px;
-        }
-
-
-    </style>
 
 </head>
 <body>
@@ -104,6 +21,7 @@
     </header>
 
     <main>
+        <section>
         <form action="">
             <div class="form-element">
                 <label for="name">Name: </label>
@@ -172,80 +90,83 @@
             </div>
 
         </form>
+    </section>
+        
 
 
-
-        <div class="table">
+        <section class="table">
             <h1>
                 Student Records
             </h1>
 
 
             <table>
-                <tr>
-                    <th>S.No</th>
-                    <th>Name</th>
-                    <th>Phone No.</th>
-                    <th>Gender</th>
-                    <th>DOB</th>
-                    <th>Hobbies</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Phone No.</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Hobbies</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td rowspan="2">Aman</td>
+                        <td rowspan="2">8835737538</td>
+                        <td rowspan="2">Male</td>
+                        <td rowspan="2">23-06-1996</td>
+                        <td>Music</td>
+                    </tr>
+                    <tr>
+                        <td>Reading</td>
+                    </tr>
+        
+                    <tr>
+                        <td rowspan="3">2</td>
+                        <td rowspan="3">Aanchal</td>
+                        <td rowspan="3">9935537538</td>
+                        <td rowspan="3">Female</td>
+                        <td rowspan="3">12-05-1997</td>
+                        <td>Stargazing</td>
+                    </tr>
+                    <tr>
+                        <td>Sports</td>
+                    </tr>
+                    <tr>
+                        <td>Reading</td>
+                    </tr>
+        
+                    <tr>
+                        <td rowspan="4">3</td>
+                        <td rowspan="4">Ashish</td>
+                        <td rowspan="4">6335537538</td>
+                        <td rowspan="4">Male</td>
+                        <td rowspan="4">12-12-1996</td>
+                        <td>Sports</td>
+                    </tr>
+                    <tr>
+                        <td>Music</td>
+                    </tr>
+                    <tr>
+                        <td>Reading</td>
+                    </tr>
+                    <tr>
+                        <td>Writing</td>
+                    </tr>
+                </tbody>
     
-                <tr>
-                    <td rowspan="2">1</td>
-                    <td rowspan="2">Aman</td>
-                    <td rowspan="2">8835737538</td>
-                    <td rowspan="2">Male</td>
-                    <td rowspan="2">23-06-1996</td>
-                    <td>Music</td>
-                </tr>
-                <tr>
-                    <td>Reading</td>
-                </tr>
-    
-                <tr>
-                    <td rowspan="3">2</td>
-                    <td rowspan="3">Aanchal</td>
-                    <td rowspan="3">9935537538</td>
-                    <td rowspan="3">Female</td>
-                    <td rowspan="3">12-05-1997</td>
-                    <td>Stargazing</td>
-                </tr>
-                <tr>
-                    <td>Sports</td>
-                </tr>
-                <tr>
-                    <td>Reading</td>
-                </tr>
-    
-                <tr>
-                    <td rowspan="4">3</td>
-                    <td rowspan="4">Ashish</td>
-                    <td rowspan="4">6335537538</td>
-                    <td rowspan="4">Male</td>
-                    <td rowspan="4">12-12-1996</td>
-                    <td>Sports</td>
-                </tr>
-                <tr>
-                    <td>Music</td>
-                </tr>
-                <tr>
-                    <td>Reading</td>
-                </tr>
-                <tr>
-                    <td>Writing</td>
-                </tr>
+                
     
     
     
             </table>
 
 
-        </div>
-
-        
-
-
+        </section>
 
     </main>
 
